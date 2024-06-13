@@ -1,0 +1,32 @@
+
+
+footer {
+    background-color: #170900;
+    text-align: center;
+    color: #f0a05b;
+
+    .footer-box {
+        display: flex;
+        margin: auto;
+        gap: 3rem;
+
+    }
+
+    h5 {
+        font-family: 700;
+        color: #e7a57c;
+    }
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+
+}
+
+img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}

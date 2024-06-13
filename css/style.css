@@ -1,0 +1,312 @@
+/* IMPORTAÇÃO */
+/* FONT 'LATO' */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* IMPORTAÇÃO DE COMPONENTES */
+
+@import './css/login.css';
+@import './footer.css';
+
+/* VARIÁVEIS */
+
+:root {
+  /* CORES */
+  --color-primary: #ff7828;
+
+  --backgroud-color-primary: #170900;
+  --background-color-secundary: rgb(225, 218, 218);
+  --btn-primary:var(--color-primary);
+  /* TIPOGRAFIA */
+  --font-family-sans-serif: 'Lato', sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html{
+  font-family: var(--font-family-sans-serif);
+}
+
+
+/* reset config */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #170900 !important;
+}
+
+.navbar {
+}
+/* navbar top */
+.navbar-top {
+  width: 100%;
+  min-height: 8vh;
+  background-color: #170900;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  @media  screen and (max-width:700px) {
+    .social-link .icons-nav-top .span-sac{
+      display: none;
+    }
+    
+  }
+
+}
+
+/* .social-link */
+
+
+/* geral icons nav top */
+.icons-nav-top {
+  font-size: 30px;
+  color: #f28e00;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    border-radius: 50px;
+  }
+}
+
+.logo-pedalradical img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* medias */
+
+@media screen and (max-width: 400px) {
+  .icons-nav-top {
+    font-size: 20px;
+  }
+}
+
+
+.btn-primary{
+  background-color: var(--color-primary) !important;
+  border: none !important;
+  span{
+    color: #fff;
+  }
+}
+
+/* DROPDOWN MENU ACESSO */
+.acesso-usuario.dropdown:hover .dropdown-menu {
+  background-color: var(--color-primary);
+  display: block;
+  position: absolute;
+  transform: translate3d(0px, 38px, 0px);
+  /* distancia entre menu e btn */
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+
+  /* .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 600;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  } */
+}
+
+.dropdown {
+  display: inline-block;
+  /* deixa o LO do "tamanho do próprio texto" e não da largura inteira da tela*/
+  list-style: none;
+  
+  /* rita a "bolinha" do LI*/
+  padding: .5rem 1rem;
+}
+
+/* navbar top - ednd*/
+
+/* main content nav */
+
+.main-content {
+  width: 100%;
+  min-height: 55vh;
+  background-image: url(../assets/images/banner-main-pedal-radical.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: 80% 10%;
+  background-attachment: fixed;
+
+  .navbar {
+    padding: 0 1rem;
+  }
+}
+
+#conteudo-principal img{
+  height: 157.933px;
+  
+}
+
+/* navbar */
+.main-content--nav {
+  background-color: #170900;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.main-content--nav .nav-link {
+  font-weight: bold;
+  color: #f1f1f1;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #f28e00;
+    /* border-bottom: 1px solid; */
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+/* medias */
+@media screen and (min-width: 400px){
+  .main-content--nav .nav-link {
+    font-weight: bold;
+    color: #f1f1f1;
+    gap: 1px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #f28e00;
+      /* border-bottom: 1px solid; */
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+@media screen and (min-width: 400px) {
+  .navbar-nav {
+    gap: .1rem;
+  }
+}
+
+/* navbar */
+.nav-item-custom{
+padding: .5rem 1rem;
+  
+}
+
+/* content */
+.content {
+  margin-left: 0px;
+  margin-top: 90px;
+
+  .card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: rgba(253, 253, 253, 0.8);
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #f28e00;
+    /* -webkit-text-stroke: 1px #ffffff; */
+    text-shadow: 0px 4px 4px #000000;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+  p {
+    padding-left: 0;
+    color: #000000;
+    font-weight: bold;
+    /* color: #ff3f05; */
+    /* background-color: #f28e00; */
+    display: inline-block;
+    padding: 5px 0px 0px;
+  }
+
+  .button-content button {
+    width: auto;
+    height: 46px;
+    background-color: #3a8e80;
+    border: 2px solid #030303;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 9px 9px 9px !important;
+
+    &:hover {
+      background-color: #9b4d0d;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+    .content {
+      margin-top: 30px !important;
+    }
+  }
+
+/* banner */
+
+/* content */
+
+/* main content nav - end*/
+
+
+/* login */
+.logo-form{
+
+  color:#f28e00
+}
+
+/* login-end */
+
+.card {
+  border: 1px solid #f28e00 !important;
+  
+}
+.card-img-top{
+  /* padding: .5rem; */
+  /* margin: .2rem; */
+  border-bottom: solid #afafaf 2px;
+}
+
+.btn-outline-dark{
+  background-color: #f28e00 !important;
+  color:#fff !important;
+  &:hover{
+    background-color: #e8b369 !important;
+    color: #000 !important;
+  }
+}
